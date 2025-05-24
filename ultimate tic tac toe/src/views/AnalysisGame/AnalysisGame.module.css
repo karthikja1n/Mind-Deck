@@ -1,0 +1,59 @@
+.analysisLayout {
+  font-size: 16px;
+  margin-bottom: 1em;
+
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1.5em;
+  grid-template-areas: 'moveList' 'historyButtons' 'game';
+  grid-template-rows:
+    minmax(50vmin, 70vmin)
+    minmax(min-content, 7vmin)
+    min-content;
+  grid-template-columns: 0.85fr;
+  justify-content: center;
+
+  /* Fix for Layouting Bug in Safari: #186 */
+  overflow: hidden;
+}
+
+.moveList {
+  grid-area: moveList;
+  padding: 0;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.analysisGame {
+  grid-area: game;
+  width: 100%;
+  justify-self: center;
+}
+
+.historyButtons {
+  grid-area: historyButtons;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 640px) and (max-height: 768px),
+  screen and (min-width: 1025px) {
+  .analysisLayout {
+    margin: 0.25em 0 0.25em;
+
+    grid-template-columns: minmax(20vw, 30vw) minmax(60vh, 87vh);
+    grid-template-rows: min-content minmax(60vh, 87vh);
+    grid-template-areas: '. historyButtons' 'moveList game';
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .analysisLayout {
+    padding: 1em 1.5em 0.5em 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .historyButtons {
+    margin-bottom: 1em;
+  }
+}

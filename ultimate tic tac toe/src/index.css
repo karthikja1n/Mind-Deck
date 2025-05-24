@@ -1,0 +1,77 @@
+:root {
+  /* TODO change these colors later to colors that are actually from the material palette */
+  --tropical-teal: #008891;
+  --incremental-blue: #0f3057;
+  --vampire-bite: #c70039;
+  --mdc-theme-primary: var(--tropical-teal);
+  --mdc-theme-secondary: var(--incremental-blue);
+  --mdc-theme-text-icon-on-background: black;
+  --mdc-theme-text-primary-on-background: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset Button Default styles */
+button {
+  border: inherit;
+  font: inherit;
+  text-align: inherit;
+  background-color: inherit;
+  text-transform: inherit;
+  text-indent: inherit;
+  text-shadow: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  cursor: inherit;
+  text-decoration: inherit;
+}
+
+.centerAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerHorizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}

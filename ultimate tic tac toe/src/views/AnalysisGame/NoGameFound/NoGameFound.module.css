@@ -1,0 +1,4 @@
+.noGameFound {
+  padding: 1em;
+  color: var(--mdc-theme-primary);
+}

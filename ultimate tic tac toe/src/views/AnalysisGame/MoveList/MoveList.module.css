@@ -1,0 +1,16 @@
+.noPadding {
+  padding: 0 !important;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.smallerMargin :global(.rmwc-icon):global(.mdc-list-item__graphic) {
+  margin-right: 15px;
+}
+
+.resetIcon :global(.rmwc-icon):global(.mdc-list-item__graphic) {
+  width: unset;
+  height: unset;
+}
