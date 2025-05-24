@@ -1,0 +1,54 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "lib": ["es7", "dom"],
+        "sourceMap": true,
+        "allowJs": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "noImplicitReturns": false,
+        "noImplicitThis": false,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "skipLibCheck": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": false,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "typeRoots": [
+            "../node_modules/@types",
+            "./types"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./*"],
+            "#/api": ["./logic/api/index.ts"],
+            "#/game": ["./logic/game/index.ts"],
+            "#/ioc": ["./logic/ioc/index.ts"],
+            "#/router": ["./logic/router/index.tsx"],
+            "#/stores": ["./logic/stores/index.ts"],
+
+            "@": ["./components"],
+            "@/*": ["./components/*"],
+
+            "antd": ["antd/lib/index.d.ts"],
+            "react": ["./types/react/index.d.ts"],
+            "react-slot": ["./types/react-slot.d.ts"],
+            "react-broadcast": ["./types/react-broadcast.d.ts"],
+            "semantic-ui-react/dist/es/*": ["semantic-ui-react/dist/commonjs/*"],
+
+            "@storybook/react":["../node_modules/@types/storybook__react/index.d.ts"],
+            "@storybook/addon-actions":["../node_modules/@types/storybook__addon-actions/index.d.ts"],
+            "@storybook/addon-backgrounds":["../node_modules/@types/storybook__addon-backgrounds/index.d.ts"],
+            "@storybook/addon-info":["../node_modules/@types/storybook__addon-info/index.d.ts"],
+            "@storybook/addon-knobs":["../node_modules/@types/storybook__addon-knobs/index.d.ts"],
+            "@storybook/addon-links":["../node_modules/@types/storybook__addon-links/index.d.ts"],
+            "@storybook/addon-notes":["../node_modules/@types/storybook__addon-notes/index.d.ts"],
+            "@storybook/addon-options":["../node_modules/@types/storybook__addon-options/index.d.ts"]
+        }
+    },
+    "include": ["**/*"],
+    "exclude": ["../node_modules/antd/lib"]
+}
