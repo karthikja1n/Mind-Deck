@@ -1,0 +1,16 @@
+:global(.mdc-top-app-bar) .title {
+  font-weight: bold;
+  color: inherit;
+}
+
+.title:hover {
+  text-shadow: 0 0 10px hsla(0, 0%, 100%, 0.5);
+}
+
+.primaryColor {
+  color: var(--mdc-theme-primary) !important;
+}
+
+.listItem:global(.mdc-list-item):global(.mdc-list-item--activated) {
+  font-weight: bold;
+}
