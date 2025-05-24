@@ -1,0 +1,283 @@
+{
+    "content": "<q-btn-group class=\"pull-right\" flat push>\n            <c-button-link color=\"secondary\" href=\"https:\/\/github.com\/codex-project\/codex\" target=\"_blank\" icon=\"fa-github\" v-bind='{\"small\":true,\"class\":[\"q-btn-item\"]}' class=\"\">Github<\/c-button-link>\n            <c-button-link color=\"secondary\" href=\"https:\/\/packagist.org\/packages\/codex\" target=\"_blank\" v-bind='{\"small\":true,\"class\":[\"q-btn-item\"]}' class=\"\">Packagist<\/c-button-link>\n    <\/q-btn-group>\n<header>\n            <small>Codex Documentation<\/small>\n        <h1>Overview<\/h1>\n<\/header><ul class=\"toc\"><li>\n        <a href=\"#introduction\">\n            <span class=\"title\">Introduction<\/span>\n        <\/a>\n            <\/li>\n    <li>\n        <a href=\"#features\">\n            <span class=\"title\">Features<\/span>\n        <\/a>\n            <\/li>\n<\/ul><phpdoc-content project=\"codex\" revision=\"master\">\n<div style=\"display:none\">\n<blockquote>\n<p>Head over to <a href=\"http:\/\/codex-project.ninja\">codex-project.ninja<\/a> for the full documentation (starting with this document) to get started.<\/p>\n<\/blockquote>\n<\/div>\n<p><a name=\"introduction\" class=\"toc-header-link\"><\/a><\/p><h2>Introduction<\/h2>\n<p><strong>Codex<\/strong> is a file-based documentation platform built on top of Laravel. It's completely customizable and dead simple to use to create beautiful documentation.<\/p>\n<p>Codex is able to do things like transforming markdown or automaticaly fetching documentation from a Bitbucket\/Github repositories.\nMost of it's features are provided by addons. Codex is extenable, themeable, hackable and simple to setup and use.<\/p>\n<p><a href=\"..\/index.md#codex:phpdoc%5B'Codex\/Codex'%5D:popover\">Codex Class<\/a> works<\/p>\n<p><strong>Codex<\/strong> &gt; <strong>Projects<\/strong> &gt; <strong>Revisions<\/strong> &gt; <strong>Documents<\/strong> &gt; <strong>Processors<\/strong> &gt; <strong>Output<\/strong><\/p>\n<ul>\n<li>\n<em>Codex<\/em> can provide documentation for multiple <em>Projects<\/em>.<\/li>\n<li>Each <em>Project<\/em> has one or more <em>Revisions (versions)<\/em>\n<\/li>\n<li>Each <em>Revision<\/em> contains <em>Documents<\/em>.<\/li>\n<li>Echo <em>Document<\/em> is passed trough <em>Processors<\/em>, modifying it's content before displaying.<\/li>\n<\/ul><p><a name=\"features\" class=\"toc-header-link\"><\/a><\/p><h2>Features<\/h2>\n<ul>\n<li>Laravel 5<\/li>\n<li>Markdown, Creole or custom document parsers<\/li>\n<li>Host a unlimited number of <em>projects\/manuals<\/em> with accompanying <em>versions<\/em>\n<\/li>\n<li>Extenable, themeable, hackable <\/li>\n<li>Simple to setup and use<\/li>\n<li>Syntax Highlighting<\/li>\n<li>Easy navigation defined in YAML<\/li>\n<li>SEO Friendly URLs<\/li>\n<li>Default theme build on Laravels theme<\/li>\n<li>Multiple storage methods (local, dropbox, amazon, etc)<\/li>\n<li>Can be installed as stand-alone or sub-component in your own (Laravel) project.<\/li>\n<li>(Addon Feature) Github\/Bitbucket (auto webhook) synchronisation based on tags\/branches. <\/li>\n<li>(Addon Feature) Smooth working, custom PHPDoc integration<\/li>\n<li>(Addon Feature) Access restriction on projects using Github\/Bitbucket login<\/li>\n<li>Much, much more!<\/li>\n<\/ul><\/phpdoc-content>",
+    "layout": {
+        "header": {
+            "class": {"c-header": true},
+            "style": [],
+            "title": "Codex",
+            "revealOnScroll": true,
+            "showTitle": true,
+            "showLeftToggle": true,
+            "showRightToggle": false,
+            "color": "blue-grey-9",
+            "menu": [
+                {
+                    "_id": "3c6eec42-6dd8-40a8-9685-c3692806f169",
+                    "to": {"name": "phpdoc", "params": {"project": "codex", "revision": "master"}},
+                    "type": "router-link",
+                    "label": "API",
+                    "sublabel": "Documentation",
+                    "icon": "fa-file-code-o",
+                    "color": "secondary"
+                },
+                {
+                    "_id": "a7bc1ed9-ed0e-4897-90fa-ef9c80169038",
+                    "type": "side-menu",
+                    "side": "right",
+                    "children": [
+                        {"_id": "801e4e95-0f20-407a-9231-89af4c8c68d6", "type": "header", "label": "Projects"},
+                        {"_id": "6117119f-9eb4-4168-8591-456fcf49afe1", "type": "divider"},
+                        {
+                            "_id": "d4c79802-a3c6-47fc-c0b2-d08d7292e7ac",
+                            "type": "router-link",
+                            "label": "Test Project",
+                            "sublabel": "This is a testing project",
+                            "icon": "fa-book",
+                            "project": "test-zip-project"
+                        },
+                        {
+                            "_id": "b88ec463-6566-42c1-af10-222023bf7597",
+                            "type": "router-link",
+                            "label": "Blade Extensions",
+                            "sublabel": "Usefull Laravel 5 Blade Directives",
+                            "icon": "fa-book",
+                            "project": "blade-extensions"
+                        },
+                        {
+                            "_id": "cab4780c-99d6-4d59-f0ae-152b9bf5a21a",
+                            "type": "router-link",
+                            "label": "Codex",
+                            "sublabel": "Codex is a file-based documentation system build with Laravel 5.5",
+                            "icon": "fa-book",
+                            "project": "codex"
+                        },
+                        {
+                            "_id": "20187750-7849-4766-dec2-29fb3d60c036",
+                            "type": "router-link",
+                            "label": "General Documentation",
+                            "sublabel": "General documentation for personal reference covering a wide array of subjects",
+                            "icon": "fa-book",
+                            "project": "general"
+                        }
+                    ],
+                    "label": "Codex",
+                    "sublabel": "Project",
+                    "icon": "fa-book"
+                },
+                {
+                    "_id": "a4d49ed2-b502-48a9-d133-e14560255943",
+                    "type": "side-menu",
+                    "side": "right",
+                    "children": [
+                        {"_id": "c728969b-b3fc-4a8c-a3f4-937f7bc720f4", "type": "header", "label": "Revisions"},
+                        {"_id": "45436d9d-97c7-4071-bb99-2d31cce6c92e", "type": "divider"},
+                        {
+                            "_id": "5ba74945-3678-4141-c24e-83ae746d4011",
+                            "type": "router-link",
+                            "label": "2.0.0-alpha",
+                            "icon": "fa-code-fork",
+                            "project": "codex",
+                            "revision": "2.0.0-alpha"
+                        },
+                        {
+                            "_id": "bf0eee05-9da5-4653-a13d-a57e6158a3ff",
+                            "type": "router-link",
+                            "label": "master",
+                            "icon": "fa-code-fork",
+                            "project": "codex",
+                            "revision": "master"
+                        },
+                        {
+                            "_id": "b40454e6-62da-4632-bc12-7dfd5700a822",
+                            "type": "router-link",
+                            "label": "v1",
+                            "icon": "fa-code-fork",
+                            "project": "codex",
+                            "revision": "v1"
+                        }
+                    ],
+                    "label": "master",
+                    "sublabel": "Revision",
+                    "icon": "fa-code-fork"
+                }
+            ],
+            "show": true,
+            "static": true
+        },
+        "left": {
+            "class": {"c-left": true},
+            "style": [],
+            "aboveFooter": true,
+            "menu": [
+                {"label": "Overview", "icon": "fa-eye", "document": "index"},
+                {"label": "TODO", "icon": "fa-eye", "document": "TODO"},
+                {"children": [{"label": "Links", "document": "links"}, {"label": "Macros", "document": "macros"}], "label": "Processors", "icon": "fa-eye"},
+                {
+                    "children": [
+                        {"label": "Dev Page", "document": "dev-page"},
+                        {"label": "Document Configuration", "document": "document"},
+                        {"label": "Global Configuration", "document": "global"}
+                    ],
+                    "label": "Test Pages",
+                    "icon": "fa-eye"
+                },
+                {
+                    "children": [
+                        {"label": "Installation", "document": "getting-started\/installation"},
+                        {"label": "Configuration", "document": "getting-started\/configuration"},
+                        {"label": "Creating a project", "document": "getting-started\/creating-a-project"}
+                    ],
+                    "label": "Getting Started",
+                    "icon": "fa-rocket"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {"label": "Menu Level 2 Item 1", "document": "getting-started\/installation"},
+                                {"label": "Menu Level 2 Item 2", "document": "getting-started\/configuration"},
+                                {"label": "Menu Level 2 Item 3", "document": "getting-started\/creating-a-project"},
+                                {
+                                    "children": [
+                                        {"label": "Menu Level 3 Item 1", "icon": "fa-rocket", "document": "getting-started\/installation"},
+                                        {"label": "Menu Level 3 Item 2", "icon": "fa-rocket", "document": "getting-started\/configuration"},
+                                        {"label": "Menu Level 3 Item 3", "icon": "fa-rocket", "document": "getting-started\/creating-a-project"},
+                                        {
+                                            "children": [
+                                                {"label": "Menu Level 4 Item 1", "document": "getting-started\/installation"},
+                                                {"label": "Menu Level 4 Item 2", "document": "getting-started\/configuration"},
+                                                {"label": "Menu Level 4 Item 3", "document": "getting-started\/creating-a-project"}
+                                            ],
+                                            "label": "Menu Level 3 Item 4",
+                                            "icon": "fa-rocket"
+                                        }
+                                    ],
+                                    "label": "Menu Level 2 Item 4",
+                                    "icon": "fa-rocket"
+                                }
+                            ],
+                            "label": "Menu Level 1 Item 1",
+                            "icon": "fa-rocket"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {"label": "Installation", "document": "getting-started\/installation"},
+                                        {"label": "Configuration", "document": "getting-started\/configuration"},
+                                        {"label": "Creating a project", "document": "getting-started\/creating-a-project"}
+                                    ],
+                                    "label": "Menu Level 2 Item 1",
+                                    "icon": "fa-rocket"
+                                }
+                            ],
+                            "label": "Menu Level 1 Item 2",
+                            "icon": "fa-rocket"
+                        },
+                        {"label": "Installation", "document": "getting-started\/installation"},
+                        {"label": "Configuration", "document": "getting-started\/configuration"},
+                        {"label": "Creating a project", "document": "getting-started\/creating-a-project"}
+                    ],
+                    "label": "Menu Test",
+                    "icon": "fa-rocket"
+                }
+            ],
+            "show": true,
+            "static": false
+        },
+        "right": {"class": {"c-right": true}, "style": [], "belowHeader": true, "aboveFooter": true, "menu": [], "show": false, "static": true},
+        "page": {"class": {"c-page": true}, "style": []},
+        "footer": {"class": {"c-footer": true}, "style": [], "color": "blue-grey-9", "menu": [], "show": true, "static": false}
+    },
+    "processors": {
+        "attributes": {
+            "tags": [{"open": "<!--*", "close": "--*>"}, {"open": "---", "close": "---"}, {"open": "\\\/\\*", "close": "\\*\\\/"}],
+            "remove_tags": true,
+            "add_extra_data": true
+        },
+        "buttons": {
+            "buttons": {
+                "github": {"text": "Github", "icon": "fa-github", "href": "https:\/\/github.com\/codex-project\/codex"},
+                "packagist": {"text": "Packagist", "href": "https:\/\/packagist.org\/packages\/codex"}
+            },
+            "default_button_attributes": {"color": "secondary", "small": true, "href": "javascript:;", "class": ["q-btn-item"], "target": "_blank"},
+            "view": "codex::processors.buttons",
+            "vue_view": "codex::processors.vue_buttons",
+            "type": "buttons"
+        },
+        "header": {"view": "codex::processors.header", "remove_from_document": true, "remove_regex": "\/<h1>(.*?)<\\\/h1>\/"},
+        "links": {
+            "prefix": "codex",
+            "actions": {
+                "phpdoc": "Codex\\Addon\\Phpdoc\\PhpdocLinks@handle",
+                "project": "Codex\\Processors\\Links\\CodexLinks@project",
+                "revision": "Codex\\Processors\\Links\\CodexLinks@revision",
+                "document": "Codex\\Processors\\Links\\CodexLinks@document"
+            }
+        },
+        "macro": {
+            "macros": {
+                "table:responsive": "Codex\\Processors\\Macros\\Table@responsive",
+                "layout:row": "Codex\\Processors\\Macros\\Layout@row",
+                "layout:column": "Codex\\Processors\\Macros\\Layout@column",
+                "general:hide": "Codex\\Processors\\Macros\\General@hide",
+                "attribute:print": "Codex\\Processors\\Macros\\Attribute@printValue"
+            }
+        },
+        "parser": {
+            "parser": "Codex\\Processors\\Parser\\MarkdownParser",
+            "markdown": {
+                "renderer": "Codex\\Processors\\Parser\\Markdown\\CodexMarkdownRenderer",
+                "html5": true,
+                "table": {"class": "q-table bordered cell-separator"},
+                "code": {"line_numbers": true, "command_line": true, "loader": false}
+            },
+            "rst": []
+        },
+        "toc": {
+            "disable": [1],
+            "regex": "\/<h(\\d)>([\\w\\W]*?)<\\\/h\\d>\/",
+            "list_class": "toc",
+            "header_link_class": "toc-header-link",
+            "header_link_show": true,
+            "header_link_text": "#",
+            "minimum_nodes": 2,
+            "view": "codex::processors.toc"
+        },
+        "enabled": ["attributes", "parser", "toc", "header", "macros", "buttons", "links", "phpdoc"],
+        "disabled": []
+    },
+    "view": "codex::layouts.default",
+    "meta": {
+        "icon": "fa-book",
+        "color": "deep-orange",
+        "authors": [],
+        "license": "MIT",
+        "links": {
+            "Git": "https:\/\/github.com\/codex-project",
+            "Issues": "https:\/\/github.com\/codex-project\/codex\/issues",
+            "Package": "https:\/\/packagist.com\/codex-project\/codex"
+        },
+        "stylesheets": [],
+        "javascripts": [],
+        "styles": [],
+        "scripts": [],
+        "author": "Robin Radic",
+        "websites": {
+            "vcs": "https:\/\/github.com\/codex-project",
+            "issues": "https:\/\/github.com\/codex-project\/codex\/issues",
+            "package": "https:\/\/packagist.com\/codex-project\/codex"
+        }
+    },
+    "title": "Overview",
+    "subtitle": "Codex Documentation",
+    "description": "",
+    "cache": true,
+    "author": "Robin Radic",
+    "test": true,
+    "path": "master\/index.md",
+    "pathName": "index",
+    "md": {"checkbox": {"checked": true, "unchecked": false}},
+    "project": "codex",
+    "revision": "master"
+}

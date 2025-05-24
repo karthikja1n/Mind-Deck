@@ -1,0 +1,70 @@
+[
+    {
+        "url": "/api/v1",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.json"
+    },
+    {
+        "url": "/phpdoc/codex/master",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.phpdoc.codex.master.json"
+    },
+    {
+        "url": "/projects/codex",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.json"
+    },
+    {
+        "url": "/projects/codex/revisions",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/document",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.document.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/getting-started/configuration",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.getting-started.configuration.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/getting-started/creating-a-project",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.getting-started.creating-a-project.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/getting-started/installation",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.getting-started.installation.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/global",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.global.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/index",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.index.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/links",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.links.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/planning/search",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.planning.search.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master/documents/TODO",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.documents.TODO.json"
+    },
+    {
+        "url": "/projects/codex/revisions/master",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.codex.revisions.master.json"
+    },
+    {
+        "url": "/projects",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.projects.json"
+    },
+    {
+        "url": "/",
+        "filePath": "/mnt/fat/node/codex-react/build/mocks/api.v1.json"
+    }
+]

@@ -1,0 +1,8 @@
+import 'chai/register-assert'; // Using Assert style
+import 'chai/register-expect'; // Using Expect style
+import 'chai/register-should';
+// noinspection ES6UnusedImports
+import { copySync, pathExistsSync, removeSync } from 'fs-extra'; // Using Should style
+
+export function bootstrap(): void {
+}

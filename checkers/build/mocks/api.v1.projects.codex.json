@@ -1,0 +1,160 @@
+{
+    "layout": {
+        "header": {
+            "class": {"c-header": true},
+            "style": [],
+            "title": "Codex",
+            "revealOnScroll": true,
+            "showTitle": true,
+            "showLeftToggle": true,
+            "showRightToggle": false,
+            "color": "blue-grey-9",
+            "menu": [],
+            "show": true,
+            "static": true
+        },
+        "left": {"class": {"c-left": true}, "style": [], "aboveFooter": true, "menu": [], "show": true, "static": false, "below_header": true},
+        "right": {"class": {"c-right": true}, "style": [], "belowHeader": true, "aboveFooter": true, "menu": [], "show": false, "static": true},
+        "page": {"class": {"c-page": true}, "style": []},
+        "footer": {"class": {"c-footer": true}, "style": [], "color": "blue-grey-9", "menu": [], "show": true, "static": false}
+    },
+    "processors": {
+        "attributes": {
+            "tags": [{"open": "<!--*", "close": "--*>"}, {"open": "---", "close": "---"}, {"open": "\\\/\\*", "close": "\\*\\\/"}],
+            "remove_tags": true,
+            "add_extra_data": true
+        },
+        "buttons": {
+            "buttons": [],
+            "default_button_attributes": {"color": "secondary", "small": true, "href": "javascript:;", "class": ["q-btn-item"], "target": "_blank"},
+            "view": "codex::processors.buttons",
+            "vue_view": "codex::processors.vue_buttons"
+        },
+        "header": {"view": "codex::processors.header", "remove_from_document": true, "remove_regex": "\/<h1>(.*?)<\\\/h1>\/"},
+        "links": {
+            "prefix": "codex",
+            "actions": {
+                "phpdoc": "Codex\\Addon\\Phpdoc\\PhpdocLinks@handle",
+                "project": "Codex\\Processors\\Links\\CodexLinks@project",
+                "revision": "Codex\\Processors\\Links\\CodexLinks@revision",
+                "document": "Codex\\Processors\\Links\\CodexLinks@document"
+            }
+        },
+        "macro": {
+            "macros": {
+                "table:responsive": "Codex\\Processors\\Macros\\Table@responsive",
+                "layout:row": "Codex\\Processors\\Macros\\Layout@row",
+                "layout:column": "Codex\\Processors\\Macros\\Layout@column",
+                "general:hide": "Codex\\Processors\\Macros\\General@hide",
+                "attribute:print": "Codex\\Processors\\Macros\\Attribute@printValue"
+            }
+        },
+        "parser": {
+            "parser": "Codex\\Processors\\Parser\\MarkdownParser",
+            "markdown": {
+                "renderer": "Codex\\Processors\\Parser\\Markdown\\CodexMarkdownRenderer",
+                "html5": true,
+                "table": {"class": "q-table bordered cell-separator"},
+                "code": {"line_numbers": true, "command_line": true, "loader": false}
+            },
+            "rst": []
+        },
+        "toc": {
+            "disable": [1],
+            "regex": "\/<h(\\d)>([\\w\\W]*?)<\\\/h\\d>\/",
+            "list_class": "toc",
+            "header_link_class": "toc-header-link",
+            "header_link_show": true,
+            "header_link_text": "#",
+            "minimum_nodes": 2,
+            "view": "codex::processors.toc"
+        },
+        "enabled": ["attributes", "parser", "toc", "header", "macros", "buttons", "links", "phpdoc"],
+        "disabled": []
+    },
+    "meta": {
+        "icon": "fa-book",
+        "color": "deep-orange",
+        "authors": [],
+        "license": "MIT",
+        "links": {
+            "Git": "https:\/\/github.com\/codex-project",
+            "Issues": "https:\/\/github.com\/codex-project\/codex\/issues",
+            "Package": "https:\/\/packagist.com\/codex-project\/codex"
+        },
+        "stylesheets": [],
+        "javascripts": [],
+        "styles": [],
+        "scripts": [],
+        "author": "Robin Radic",
+        "websites": {
+            "vcs": "https:\/\/github.com\/codex-project",
+            "issues": "https:\/\/github.com\/codex-project\/codex\/issues",
+            "package": "https:\/\/packagist.com\/codex-project\/codex"
+        }
+    },
+    "disk": "codex-codex",
+    "display_name": "Codex",
+    "description": "Codex is a file-based documentation system build with Laravel 5.5",
+    "default": "master",
+    "default_document": "index",
+    "extensions": ["md", "markdown", "html"],
+    "view": "codex::layouts.default",
+    "phpdoc": {
+        "enabled": true,
+        "document_slug": "phpdoc",
+        "title": "Api Documentation",
+        "xml_path": "structure.xml",
+        "doc_path": "_phpdoc",
+        "doc_disabled_processors": ["header", "toc"],
+        "view": "codex-phpdoc::document",
+        "layout": {
+            "header": {
+                "color": "blue-grey-9",
+                "show": true,
+                "static": true,
+                "class": {"c-header": true},
+                "style": [],
+                "menu": [
+                    {
+                        "label": "Documentation",
+                        "sublabel": "Go back",
+                        "icon": "fa-chevron-left",
+                        "type": "router-link",
+                        "to": {
+                            "name": "document",
+                            "params": {
+                                "project": "<%= store.codex.project.key %>",
+                                "revision": "<%= store.codex.revision.key %>",
+                                "document": "<%= store.codex.revision.default_document %>"
+                            }
+                        }
+                    }
+                ],
+                "title": "Codex",
+                "revealOnScroll": true,
+                "showTitle": true,
+                "showLeftToggle": false,
+                "showRightToggle": false
+            },
+            "left": {"show": false, "static": false, "below_header": true, "aboveFooter": true, "class": {"c-left": true}, "style": [], "menu": []},
+            "right": {"belowHeader": true, "aboveFooter": true, "class": {"c-right": true}, "show": false, "static": true, "style": [], "menu": []},
+            "page": {"class": {"c-page": true}, "style": []},
+            "footer": {"color": "blue-grey-9", "class": {"c-footer": true}, "show": true, "static": false, "style": [], "menu": []}
+        },
+        "default_class": "Codex\\Codex"
+    },
+    "test": true,
+    "git": {
+        "enabled": false,
+        "owner": "codex-project",
+        "repository": "core",
+        "connection": "github",
+        "sync": {"constraints": {"branches": ["master"], "versions": ">=2.0.0"}, "paths": {"docs": "resources\/docs", "index": "resources\/docs\/index.md"}},
+        "webhook": {"enabled": true}
+    },
+    "key": "codex",
+    "path": "\/mnt\/fat\/php\/projects\/codex\/resources\/docs\/codex",
+    "default_revision": "master",
+    "revisions": {"2.0.0-alpha": "index", "master": "index", "v1": "index"}
+}
