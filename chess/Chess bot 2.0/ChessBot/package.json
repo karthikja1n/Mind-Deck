@@ -1,0 +1,19 @@
+{
+  "name": "chess-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx --watch src/index.ts",
+    "test": "tsx src/test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.6"
+  }
+}
